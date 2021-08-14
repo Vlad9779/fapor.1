@@ -386,8 +386,10 @@ footer .footer_bottom .footer_bottom2 .ftg:hover i {
     margin-left: 62px;
     margin-top: 32px;
     border-color: black;
+    overflow: initial;
 }
-b{
+
+b {
     font-size: 17px;
     display: inline-block;
     text-align: center;
@@ -396,7 +398,13 @@ b{
     padding-right: 50px;
 
 }
-.reset button{
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+    border-radius: 2%;
+}
+
+.reset button {
     font-size: 20px;
     border: solid 1px #d5d5d5;
     background-color: #d5d5d5;
@@ -404,35 +412,79 @@ b{
     padding: 23px 149px;
     margin-top: 37px;
 }
-.or{
+
+.or {
     margin-top: 29px;
     font-size: 17px;
 }
-.social_network button{
+
+.social_network a {
     border: solid 1px #557bcd;
     background-color: #557bcd;
     padding: 23px 132px;
-    color: #FFFFFF;
     margin-bottom: 167px;
     margin-top: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+
 }
-input{
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: .4em 1em;
+    position: relative;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: .1em 0;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    font-size: 20px;
+
+}
+
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: initial;
+    margin-bottom: 140px;
+}
+
+input {
     height: 38px;
     width: 384px;
 
 }
-#dialog {
-text-align: center;
 
+#dialog {
+    text-align: center;
+    border-radius: 2%;
+    overflow: initial;
 }
-.ui-draggable .ui-dialog-titlebar{
+
+.ui-draggable .ui-dialog-titlebar {
     background-color: black;
     text-align: center;
     color: #FFFFFF;
-}
-.ui-dialog .ui-dialog-titlebar-close{
+
 
 }
+
+.social_network a i {
+    color: #FFFFFF;
+}
+
+
 @media only screen and (max-width: 768px) {
 
 }
@@ -443,7 +495,9 @@ text-align: center;
 
 
 @media only screen and (max-width: 425px) {
-
+    #opener {
+        max-width: 420px;
+    }
 
 }
 
@@ -452,19 +506,20 @@ text-align: center;
 }
 
 @media only screen and (max-width: 360px) {
-    .b{
+    .b {
         max-width: 360px;
     }
-    .reset button{
+
+    .reset button {
         padding-top: 5px;
     }
-    header{
-        
+
+    header {
+
     }
 }
 
 @media only screen and (max-width: 320px) {
-
 
 
 }
